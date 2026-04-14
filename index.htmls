@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canudos Ethnic Bar | Tbilisi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #e67e22; /* Warm Orange */
+            --dark: #1a1a1a;
+            --light: #f4f4f4;
+            --accent: #9b59b6; /* LGBTQ+ Inclusion Purple */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 { font-size: 4rem; margin: 0; color: var(--primary); text-transform: uppercase; letter-spacing: 5px; }
+        p.tagline { font-size: 1.5rem; margin: 10px 0; font-style: italic; }
+
+        /* Status Badge */
+        .status {
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Grid Layout */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #222;
+            padding: 25px;
+            border-radius: 10px;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        /* Menu Styles */
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #444;
+            padding-bottom: 5px;
+        }
+
+        .price { color: var(--primary); font-weight: bold; }
+
+        /* Call to Action Buttons */
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            transition: 0.3s;
+        }
+        .btn:hover { background: #d35400; transform: translateY(-3px); }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #111;
+        }
+
+        .rainbow-line {
+            height: 5px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            width: 100%;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="status">CLOSED - OPENS AT 5:00 PM</div>
+        <h1>CANUDOS</h1>
+        <p class="tagline">Spirit of Travel & Ethnic Flavors</p>
+        <div>
+            <a href="tel:591193546" class="btn"><i class="fas fa-phone"></i> Call Us</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Canudos+Ethnic+Bar+Tbilisi" class="btn btn-outline"><i class="fas fa-map-marker-alt"></i> Directions</a>
+        </div>
+    </header>
+
+    <div class="rainbow-line"></div>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <h2><i class="fas fa-globe-africa"></i> The Vibe</h2>
+                <p>Canudos is a crossroads in Tbilisi for travelers, locals, and rebels. We are a proudly <strong>LGBTQ+ friendly</strong> space where you can be yourself.</p>
+                <p>📍 Mikheil Javakhishvili Str, 2</p>
+                <p>💰 Budget: 10-20 GEL</p>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-utensils"></i> Dirty Fingers</h2>
+                <div class="menu-item"><span>BBQ Ribs</span> <span class="price">12 GEL</span></div>
+                <div class="menu-item"><span>Spicy Chicken Wings</span> <span class="price">12 GEL</span></div>
+                <div class="menu-item"><span>Sulguni Sticks</span> <span class="price">10 GEL</span></div>
+                <div class="menu-item"><span>Mexican Potato</span> <span class="price">7 GEL</span></div>
+                <div class="menu-item"><span>Magical Shawarma</span> <span class="price">10 GEL</span></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Canudos Ethnic Bar | Open Daily from 17:00</p>
+        <div style="font-size: 1.5rem;">
+            <i class="fab fa-facebook" style="margin: 0 10px;"></i>
+            <i class="fab fa-instagram" style="margin: 0 10px;"></i>
+        </div>
+    </footer>
+
+</body>
+</html>
